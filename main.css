@@ -1,0 +1,166 @@
+/*color */
+body {
+--text-color: rgb(163, 163, 163);
+--backgroundInput: rgba(0, 0, 0, 0.5);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(25deg, rgba(4,0,6,1) 0%, rgba(8,15,45,1) 50%, rgba(4,0,6,1) 100%);
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 45px;
+    padding: 20px 0px;
+}
+
+.delAlContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.deleteAll {
+    width: 200px;
+    text-align: center;
+    margin: 10px 0px;
+    color: var(--text-color);
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px solid grey;
+    background-color: var(--backgroundInput);
+
+    height: 30px;
+}
+
+.import-list {
+    display: flex;
+    justify-content: center;
+}
+
+.import-list input {
+    width: 800px;
+    height: 40px;
+    font-size: 25px;
+    background-color: var(--backgroundInput);
+    border: none;
+    padding: 0px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: rgb(163, 163, 163);
+    transition: .5s all;
+}
+
+.import-list input:focus {
+    color: white;
+    outline: none;
+    border: 1px solid var(--text-color);
+    transition: .5s all;
+    background-color: black;
+}
+
+.addPlan {
+    background-color: var(--backgroundInput);
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50px;
+    cursor: pointer;
+    transition: .5s all;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+
+.addPlan:hover {
+    color: white;
+    transition: .5s all;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: center;
+}
+
+.plans {
+    width: 800px;
+    
+    background-color: var(--backgroundInput);
+    transition: .5s all;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.plan-item {
+    width: 800px;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 25px;
+    border-radius: 10px;
+    min-height: 40px;
+    border: 1px solid rgb(44, 44, 44);
+    background-color: var(--backgroundInput);
+    margin: 10px 0px;
+    padding-left:10px;
+    padding-right: 45px;
+    transition: .5s all;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+.plan-item:hover {
+    background-color: rgba(0, 0, 0, 0.808);
+    transition: .5s all;
+}
+
+.plan-item .clear {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: blue;
+    border-radius: 10px;
+    transition: .5s all;
+}
+
+.plan-item .clear:hover {
+    background-color: rgb(156, 0, 0);
+    transition: .5s all;
+}
+
+
+@media only screen and (max-width: 835px) {
+    .plan-item {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 423px) {
+    .import-list input {
+        width: 100%;
+        font-size: 20px;
+    }
+}
